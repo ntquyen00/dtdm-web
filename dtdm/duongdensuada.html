@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #FFFFCC;
+      padding: 25px;
+    }
+    
+    .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      max-height:500px;
+    }
+
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+    @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+    }
+    
+    /* CSS cho thanh menu */
+    .navbar {
+      background-color: #FFFFCC; /* Màu nền */
+      color: #2E8B57; /* Màu chữ */
+
+    }
+     
+    /* CSS cho dropdown menu */
+    .dropdown {
+      background-color: #FFFFCC; /* Màu nền dropdown menu */
+      color: #2E8B57; /* Màu chữ dropdown menu */
+    }
+
+    .dropdown ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .dropdown li {
+      display: inline-block;
+      position: relative;
+    }
+
+    .dropdown li a {
+      display: block;
+      padding: 12px 16px;
+      text-decoration: none;
+      color: #2E8B57; /* Màu chữ của các mục dropdown menu */
+    }
+    
+    /* Thêm CSS cho dropdown menu khi mở */
+    .dropdown.open .dropdown-menu {
+      background-color: #FFFFCC;
+    }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a class="active" href="home.html"><img src="logo.png" class="img-circle" width="40" height="40"></a></li>
+                    <li class="dropdown" style="color:#FFFFCC">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:green"><b>Cà phê</b><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cfhighlight.html"><b>Cà phê Highlight</b></a></li>
+                            <li><a href="cfvietnam.html"><b>Cà phê Việt Nam</b></a></li>
+                            <li><a href="cfmay.html"><b>Cà phê máy</b></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:green"><b>Trà</b><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="tratraicay.html"><b>Trà trái cây</b></a></li>
+                            <li><a href="trasua.html"><b>Trà sữa</b></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:green"><b>Thức uống đá xay</b><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="coockiedaxay.html"><b>Cookie đá xay</b></a></li>
+                            <li><a href="suachuadaxay.html"><b>Sữa chua đá xay</b></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:green"><b>Bánh & Snack</b><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="banhman.html"><b>Bánh mặn</b></a></li>
+                            <li><a href="banhngot.html"><b>Bánh ngọt</b></a></li>
+                            <li><a href="snack.html"><b>Snack</b></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav><br>
+    <div class="container text-center">   
+        <div class="row">
+            <div class="col-sm-6"><br>
+                <img src="duongdensuada.webp" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            
+            <div class="col-sm-6"> 
+                <section>
+                    <div class="product">
+                      <h2><b>Đường Đen Sữa Đá</b></h2>
+                      <h3><font color="#FF7F50">20.000<sup>đ</sup></font></h3><br>
+                      <h4>Chọn size (bắt buộc)</h4>
+                      <p><button type="button">Nhỏ + 0<sup>đ</sup></button>
+                        <button type="button">Vừa + 4.000<sup>đ</sup></button>
+                        <button type="button">Lớn + 6.000<sup>đ</sup></button>
+                      </p>
+                      <h3>Topping</h3>
+                      <p><button type="button">Kem Phô Mai Macchiato + 5.000<sup>đ</sup></button></p>
+                        <button type="button">Thạch Cà Phê + 5.000<sup>đ</sup></button>
+                        <button type="button">Trân Châu Trắng + 5.000<sup>đ</sup></button>
+                        <button type="button">Sốt Caramel + 5.000<sup>đ</sup></button>
+                      </p><br>
+                      <p><button type="button" style="width:100%">Đặt hàng</button></p>
+                    </div>
+                  </section>
+            </div>
+        </div>
+    </div><br>
+<div class="container text-left">   
+        <div class="row">
+            <div class="col-sm-12"><br>
+                <hr>
+                <h4><b>Mô tả</b></h4>
+                <h5>Nếu chuộng vị cà phê đậm đà, bùng nổ và thích vị đường đen ngọt thơm, Đường Đen Sữa Đá đích thị là thức uống dành cho bạn. Không chỉ giúp bạn tỉnh táo buổi sáng, Đường Đen Sữa Đá còn hấp dẫn đến ngụm cuối cùng bởi thạch cà phê giòn dai, nhai cực cuốn. - Khuấy đều trước khi sử dụng</h5>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12"><br>
+                <h4><b>Sản phẩm liên quan</b></h4>
+            </div>
+        </div>
+    </div><br>
+
+
+
+    <div class="container text-center">   
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="cfsuatuoibanhplan.html"  onClick="document.getElementById('#').src='#'">
+                    <img src="hlstbl.webp" alt="Lights" style="width:100%">
+                    <div class="caption">
+                        <p><h4><font color="black">Cà Phê Sữa Tươi Bánh Flan</font></h4></p> 
+                        <p><h5>30.000<sup>đ</sup></h5></p>
+                    </div>
+                  </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="traxanhem.html"  onClick="document.getElementById('#').src='#'">
+                  <img src="hltx.webp" alt="Lights" style="width:100%">
+                  <div class="caption">
+                      <p><h4><font color="black">Trà Xanh Espresso Marble</font></h4></p> 
+                      <p><h5>30.000<sup>đ</sup></h5></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="cfsuada.html"  onClick="document.getElementById('#').src='#'">
+                    <img src="cfsuada.webp" alt="Lights" style="width:100%">
+                    <div class="caption">
+                        <p><h4><font color="black">Cà Phê Sữa Đá</font></h4></p>    
+                        <p><h5>20.000<sup>đ</sup></h5></p>
+                    </div>
+                  </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="cfdenda.html"  onClick="document.getElementById('#').src='#'">
+                    <img src="cfdenda.jpg" alt="Lights" style="width:100%">
+                    <div class="caption">
+                        <p><h4><font color="black">Cà Phê Đen Đá</font></h4></p>   
+                        <p><h5>20.000<sup>đ</sup></h5></p>
+                    </div>
+                  </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="bacsiu.html"  onClick="document.getElementById('#').src='#'">
+                    <img src="bacsiu.webp" alt="Lights" style="width:100%">
+                    <div class="caption">
+                        <p><h4><font color="black">Bạc Sỉu</font></h4></p>    
+                        <p><h5>20.000<sup>đ</sup></h5></p>
+                    </div>
+                  </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="cfsuanong.html"  onClick="document.getElementById('#').src='#'">
+                    <img src="cfsuanong.jpg" alt="Lights" style="width:100%">
+                    <div class="caption">
+                        <p><h4><font color="black">Cà Phê Sữa Nóng</font></h4></p>    
+                        <p><h5>15.000<sup>đ</sup></h5></p><br>
+                    </div>
+                  </a>
+                </div>
+            </div><div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="bacsiunong.html"  onClick="document.getElementById('#').src='#'">
+                    <img src="bacsiunong.jpg" alt="Lights" style="width:100%">
+                    <div class="caption">
+                        <p><h4><font color="black">Bạc Sỉu Nóng</font></h4></p>    
+                        <p><h5>15.000<sup>đ</sup></h5></p><br>
+                    </div>
+                  </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                  <a href="cfdennong.html"  onClick="document.getElementById('#').src='#'">
+                    <img src="cfdennong.jpg" alt="Lights" style="width:100%">
+                    <div class="caption">
+                        <p><h4><font color="black">Cà Phê Đen Nóng</font></h4></p>    
+                        <p><h5>15.000<sup>đ</sup></h5></p><br>
+                    </div>
+                  </a>
+                </div>
+            </div>
+        </div>
+    </div><br>
+</body>
+
+</html>	
